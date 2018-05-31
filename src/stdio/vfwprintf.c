@@ -73,6 +73,9 @@ static const unsigned char states[]['z'-'A'+1] = {
 	}, { /* 5: L-prefixed */
 		S('e') = LDBL, S('f') = LDBL, S('g') = LDBL, S('a') = LDBL,
 		S('E') = LDBL, S('F') = LDBL, S('G') = LDBL, S('A') = LDBL,
+		S('d') = LLONG, S('i') = LLONG,
+		S('o') = ULLONG, S('u') = ULLONG,
+		S('x') = ULLONG, S('X') = ULLONG,
 		S('n') = PTR,
 	}, { /* 6: z- or t-prefixed (assumed to be same size) */
 		S('d') = PDIFF, S('i') = PDIFF,

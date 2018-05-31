@@ -38,6 +38,9 @@ static void store_int(void *dest, int size, unsigned long long i)
 	case SIZE_ll:
 		*(long long *)dest = i;
 		break;
+	case SIZE_L:
+		*(long long *)dest = i;
+		break;
 	}
 }
 
